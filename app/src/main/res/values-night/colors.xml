@@ -1,0 +1,8 @@
+<resources>
+    <color name="purple_200">#BB86FC</color>        <!-- можно оставить как есть -->
+    <color name="purple_700">#3700B3</color>        <!-- более тёмный фиолетовый -->
+    <color name="teal_200">#03DAC5</color>          <!-- оставляем бирюзовый -->
+    <color name="black">#FFFFFF</color>              <!-- белый, текст на тёмном фоне -->
+    <color name="white">#121212</color>              <!-- почти чёрный фон -->
+    <color name="background">#121212</color>         <!-- фон экрана для ночи -->
+</resources>

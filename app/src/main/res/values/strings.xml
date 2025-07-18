@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">IceRockGithubViewer</string>
+    <string name="auth_nav_label">Auth screen</string>
+    <string name="detail_info_nav_label">Detail Info Screen</string>
+    <string name="repositories_list_nav_label">Repositories List Screen</string>
+    <string name="personal_access_token_hint">Personal access token</string>
+    <string name="ice_rock_logo_content_description">Ice Rock Logo</string>
+    <string name="sign_in_button_label">sign in</string>
+    <string name="error_message">Invalid token</string>
+    <string name="log_out_menu_title">Log out</string>
+    <string name="network_error">Network error. Check your internet connection.</string>
+    <string name="http_error_code">"HTTP error / code: %d \nInformation for developers"</string>
+    <string name="error">Error</string>
+    <string name="ok">OK</string>
+    <string name="error_logo_content_description">Error logo</string>
+    <string name="connection_error">Connection Error</string>
+    <string name="empty_message">Empty</string>
+    <string name="check_your_internet_connection">Check your internet connection</string>
+    <string name="empty_repositories_list">No repositories at the moment</string>
+    <string name="repositories_label">Repositories</string>
+    <string name="error_repositories">Error code: %s</string>
+    <string name="retry_button_label">Retry</string>
+    <string name="refresh_button_label">Refresh</string>
+    <string name="link_icon_content_description">Link icon</string>
+    <string name="license_icon_content_description">License icon</string>
+    <string name="license_text">License</string>
+    <string name="star_icon_content_description">Star icon</string>
+    <string name="fork_icon_content_description">Fork icon</string>
+    <string name="forks_label">forks</string>
+    <string name="watchers_icon_content_description">Watchers icon</string>
+    <string name="watchers_label">watchers</string>
+    <string name="stars_label">stars</string>
+    <string name="no_readme">No README.md</string>
+</resources>

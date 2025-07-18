@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/repositoriesListFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.screens.repositories_list.RepositoriesListFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/repositories_list_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/repositories_list_item" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center"
+        android:id="@+id/repositories_list_loading_pb"
+        android:elevation="10dp"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        app:indicatorColor="@color/black"
+        app:indicatorSize="56dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/repositories_list_error_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/repositories_list_error_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/error_logo_content_description"
+            app:layout_constraintBottom_toTopOf="@id/repositories_list_error_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/ic_no_connection" />
+
+        <TextView
+            android:id="@+id/repositories_list_error_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/repositories_list_error_image"
+            tools:text="Connection error"
+            tools:textColor="@color/error" />
+
+        <TextView
+            android:id="@+id/repositories_list_error_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/repositories_list_error_title"
+            tools:text="Check your internet connection" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/repositories_list_error_button"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/accent"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:visibility="visible"
+            app:cornerRadius="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Retry" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

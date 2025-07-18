@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AuthHintText" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textColor">@color/secondary</item>
+    </style>
+
+    <style name="RepositoriesActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/status_bar</item>
+    </style>
+
+    <!-- Theme used by MarkyMark -->
+    <style name="MarkdownStyle" parent="MarkyMarkStyle">
+        <item name="android:lineSpacingExtra">4dp</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="MarkdownHeader1Style">@style/Header1</item>
+        <item name="MarkdownHeader2Style">@style/Header2</item>
+        <item name="MarkdownHeader3Style">@style/Header3</item>
+        <item name="MarkdownHeader4Style">@style/Header4</item>
+        <item name="MarkdownParagraphStyle">@style/PlainText</item>
+        <item name="MarkdownCodeStyle">@style/CodeBlock</item>
+        <item name="MarkdownQuoteStyle">@style/Quote</item>
+        <item name="MarkdownListStyle">@style/List</item>
+    </style>
+
+    <!-- Different color for Markdown tags -->
+    <style name="Header1" parent="MarkyMarkHeader1">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">23sp</item>
+        <item name="android:textColorLink">@color/black</item>
+        <item name="android:linksClickable">true</item>
+    </style>
+
+    <style name="Header2" parent="MarkyMarkHeader2">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">23sp</item>
+        <item name="android:textColorLink">@color/black</item>
+        <item name="android:linksClickable">true</item>
+    </style>
+
+    <style name="Header3" parent="MarkyMarkHeader3">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">23sp</item>
+        <item name="android:textColorLink">@color/black</item>
+        <item name="android:linksClickable">true</item>
+    </style>
+
+    <style name="Header4" parent="MarkyMarkHeader4">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">23sp</item>
+        <item name="android:textColorLink">@color/black</item>
+        <item name="android:linksClickable">true</item>
+    </style>
+
+    <style name="PlainText" parent="MarkyMarkParagraph">
+        <item name="android:textColor">@color/black_with_opacity</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColorLink">@color/black</item>
+        <item name="android:linksClickable">true</item>
+    </style>
+
+    <style name="List" parent="MarkyMarkList">
+        <item name="android:textColor">@color/black_with_opacity</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColorLink">@color/black</item>
+        <item name="android:linksClickable">true</item>
+    </style>
+
+    <style name="CodeBlock" parent="MarkyMarkCode">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:background">@color/gray</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorLink">@color/black</item>
+    </style>
+
+    <style name="Quote" parent="MarkyMarkQuote">
+        <item name="backgroundColor">@color/background</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColorLink">@color/black</item>
+        <item name="android:linksClickable">true</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/authFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    tools:context=".presentation.screens.auth.AuthFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@color/background"
+        android:focusable="true">
+
+        <ImageView
+            android:id="@+id/logo_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/ice_rock_logo_content_description"
+            android:src="@drawable/ic_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/authTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="48dp"
+            android:hint="@string/personal_access_token_hint"
+            android:textColorHint="@color/secondary"
+            app:boxStrokeColor="@color/secondary"
+            app:boxStrokeErrorColor="@color/error"
+            app:errorEnabled="true"
+            app:errorTextColor="@color/error"
+            app:hintTextAppearance="@style/AuthHintText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logo_image_view">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/authInputText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/secondary"
+                app:hintTextAppearance="@style/AuthHintText"
+                tools:layout_editor_absoluteX="-4dp"
+                tools:layout_editor_absoluteY="262dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="30dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/signInButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="16dp"
+            android:backgroundTint="@color/accent"
+            android:text="@string/sign_in_button_label"
+            android:textColor="@color/black"
+            android:visibility="visible"
+            app:cornerRadius="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/singInProgressBar"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:elevation="3dp"
+            android:indeterminate="true"
+            android:visibility="invisible"
+            app:indicatorColor="@color/black"
+            app:indicatorSize="24dp"
+            app:layout_constraintBottom_toBottomOf="@id/signInButton"
+            app:layout_constraintEnd_toEndOf="@id/signInButton"
+            app:layout_constraintStart_toStartOf="@id/signInButton"
+            app:layout_constraintTop_toTopOf="@id/signInButton" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
